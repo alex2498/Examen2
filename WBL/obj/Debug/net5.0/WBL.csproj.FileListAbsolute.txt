@@ -1,0 +1,5 @@
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\WBL.csproj.AssemblyReference.cache
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\WBL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\WBL.AssemblyInfoInputs.cache
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\WBL.AssemblyInfo.cs
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\WBL.csproj.CoreCompileInputs.cache

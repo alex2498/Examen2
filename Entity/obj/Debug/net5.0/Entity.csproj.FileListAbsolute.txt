@@ -1,0 +1,5 @@
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\Entity\obj\Debug\net5.0\Entity.csproj.AssemblyReference.cache
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\Entity\obj\Debug\net5.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\Entity\obj\Debug\net5.0\Entity.AssemblyInfoInputs.cache
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\Entity\obj\Debug\net5.0\Entity.AssemblyInfo.cs
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\Entity\obj\Debug\net5.0\Entity.csproj.CoreCompileInputs.cache
