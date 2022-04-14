@@ -5,12 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Entity
-{//Prueba Davis
-    //Prueba 2 davis
-    //Prueba 3 Davis
-    //Prueba 4
-    //prueba 5
-    //prueba 6
+{//Pruebas develop
+    
     public class DBEntity
     {
         public int CodeError { get; set; }
