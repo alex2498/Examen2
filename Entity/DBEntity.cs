@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Entity
-{
+{//Prueba Davis
     public class DBEntity
     {
         public int CodeError { get; set; }
