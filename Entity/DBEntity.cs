@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {//Prueba Davis
+    //Prueba 2 davis
     public class DBEntity
     {
         public int CodeError { get; set; }
