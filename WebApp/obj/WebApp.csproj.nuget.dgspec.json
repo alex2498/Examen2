@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\David\\OneDrive - Caja Costarricense de Seguro Social\\UTC\\Progra VI\\Examen 2\\WebApp\\WebApp.csproj": {}
+    "C:\\Users\\Pito\\Desktop\\Examen2\\WebApp\\WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\David\\OneDrive - Caja Costarricense de Seguro Social\\UTC\\Progra VI\\Examen 2\\WebApp\\WebApp.csproj": {
+    "C:\\Users\\Pito\\Desktop\\Examen2\\WebApp\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\David\\OneDrive - Caja Costarricense de Seguro Social\\UTC\\Progra VI\\Examen 2\\WebApp\\WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\Pito\\Desktop\\Examen2\\WebApp\\WebApp.csproj",
         "projectName": "WebApp",
-        "projectPath": "C:\\Users\\David\\OneDrive - Caja Costarricense de Seguro Social\\UTC\\Progra VI\\Examen 2\\WebApp\\WebApp.csproj",
-        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\David\\OneDrive - Caja Costarricense de Seguro Social\\UTC\\Progra VI\\Examen 2\\WebApp\\obj\\",
+        "projectPath": "C:\\Users\\Pito\\Desktop\\Examen2\\WebApp\\WebApp.csproj",
+        "packagesPath": "C:\\Users\\Pito\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pito\\Desktop\\Examen2\\WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Pito\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,6 +71,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.14, 5.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -79,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,23 @@
 ﻿CREATE PROCEDURE [dbo].[SolicitudObtener]
-	@param1 int = 0,
-	@param2 int
+@IdSolicitud INT = NULL
+
 AS
-	SELECT @param1, @param2
-RETURN 0
+	BEGIN
+	SET NOCOUNT ON
+	
+	SELECT 
+           IdSolicitud,
+		   IdCliente,
+		   IdServicio,
+		   Cantidad,
+		   Monto,
+		   FechaEntrega,
+		   UsuarioEntrega,
+		   Observaciones
+	FROM 
+	     Solicitud
+	WHERE 
+	    (@IdSolicitud IS NULL OR IdSolicitud=@IdSolicitud)
+
+	END
+GO

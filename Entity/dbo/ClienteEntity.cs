@@ -4,13 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-<<<<<<< HEAD
+
 namespace Entity
 {
-    public class ClienteEntity: DBEntity
+    public class ClienteEntity  
     {
+        public ClienteEntity()
+        {
+            Servicio = Servicio ?? new ServicioEntity();
+        }
 
         public int? IdCliente  { get; set; }
+        public int? IdServicio { get; set; }
+        public int? IdSolicitud { get; set; }
+
+        public virtual ServicioEntity Servicio{ get; set; }
         public string Identificacion { get; set; }
         public int IdTipoIdentificacion { get; set; }
         public string Nombre { get; set; }
@@ -26,12 +34,8 @@ namespace Entity
         public string CuentaIBAN { get; set; }
         public string CorreoNotifica { get; set; }
 
-=======
-namespace Entity.dbo
-{
-   class ClienteEntity 
-    {
-
->>>>>>> developer
     }
+
+
 }
+
