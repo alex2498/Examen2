@@ -10,7 +10,19 @@ using System.Threading.Tasks;
 
 namespace WBL
 {
-    public class ClienteService
+    //INTERFASES
+    public interface IClienteService
+    {
+        Task<DBEntity> Create(ClienteEntity entity);
+        Task<DBEntity> Delete(ClienteEntity entity);
+        Task<IEnumerable<ClienteEntity>> Get();
+        Task<IEnumerable<ClienteEntity>> GetLista();
+        Task<ClienteEntity> GetById(ClienteEntity entity);
+        Task<DBEntity> Update(ClienteEntity entity);
+    }
+
+    //Constructor
+    public class ClienteService : IClienteService
     {
         private readonly IDataAccess sql;
 
@@ -20,8 +32,11 @@ namespace WBL
         }
 
 
+
+
         #region Metodos CRUD
 
+        //Metodo GET
         public async Task<IEnumerable<ClienteEntity>> Get()
         {
             try
@@ -139,6 +154,25 @@ namespace WBL
                 throw;
             }
         }
+        #endregion
+
+        #region MyRegion
+        //Metodo GETLista
+        public async Task<IEnumerable<ClienteEntity>> GetLista()
+        {
+            try
+            {
+                var result = sql.QueryAsync<ClienteEntity>("dbo.ClienteLista");
+                return await result;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         #endregion
 
     }
