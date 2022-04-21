@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Pages\NewFolder\" />
     <Folder Include="wwwroot\App\" />
   </ItemGroup>
 
@@ -67,6 +68,11 @@
     <None Include="wwwroot\Assets\template\sidebarmenu.js" />
     <None Include="wwwroot\Assets\template\sparkline.js" />
     <None Include="wwwroot\Assets\template\waves.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj" />
+    <ProjectReference Include="..\WBL\WBL.csproj" />
   </ItemGroup>
 
   <ItemGroup>

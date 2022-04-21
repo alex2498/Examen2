@@ -1,0 +1,6 @@
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BaseDeDatos\bin\Debug\BaseDeDatos.dacpac
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BaseDeDatos\bin\Debug\BaseDeDatos.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BaseDeDatos\bin\Debug\BaseDeDatos.pdb
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BaseDeDatos\obj\Debug\BaseDeDatos.sqlproj.AssemblyReference.cache
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BaseDeDatos\obj\Debug\BaseDeDatos.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BaseDeDatos\obj\Debug\BaseDeDatos.pdb

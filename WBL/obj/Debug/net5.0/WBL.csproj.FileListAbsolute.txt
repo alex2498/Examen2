@@ -3,3 +3,15 @@ D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\WBL.AssemblyInfoInputs.cache
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\WBL.AssemblyInfo.cs
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\WBL.csproj.CoreCompileInputs.cache
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\bin\Debug\net5.0\WBL.deps.json
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\bin\Debug\net5.0\WBL.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\bin\Debug\net5.0\ref\WBL.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\bin\Debug\net5.0\WBL.pdb
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\bin\Debug\net5.0\BD.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\bin\Debug\net5.0\Entity.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\bin\Debug\net5.0\BD.pdb
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\bin\Debug\net5.0\Entity.pdb
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\WBL.csproj.CopyComplete
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\WBL.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\ref\WBL.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\WBL.pdb

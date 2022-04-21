@@ -1,6 +1,5 @@
 ﻿using BD;
 using Entity;
-using Entity.dbo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,17 +9,19 @@ using System.Threading.Tasks;
 
 namespace WBL
 {
+    public interface IServicioService
+    {
+        Task<DBEntity> Create(ServicioEntity entity);
+        Task<DBEntity> Delete(ServicioEntity entity);
+        Task<IEnumerable<ServicioEntity>> Get();
+        Task<ServicioEntity> GetById(ServicioEntity entity);
+        Task<DBEntity> Update(ServicioEntity entity);
+    }
+
+
     public class ServicioServices
     {
-        public interface IServicioService
-        {
-            Task<DBEntity> Create(ServicioEntity entity);
-            Task<DBEntity> Delete(ServicioEntity entity);
-            Task<IEnumerable<ServicioEntity>> Get();
-            Task<ServicioEntity> GetById(ServicioEntity entity);
-            Task<DBEntity> Update(ServicioEntity entity);
-        }
-
+    
         public class ServicioService : IServicioService
         {
             //Constructor

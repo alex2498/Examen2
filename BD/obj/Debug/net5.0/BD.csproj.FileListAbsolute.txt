@@ -3,3 +3,13 @@ D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\obj\Debug\net5.0\BD.AssemblyInfoInputs.cache
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\obj\Debug\net5.0\BD.AssemblyInfo.cs
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\obj\Debug\net5.0\BD.csproj.CoreCompileInputs.cache
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\bin\Debug\net5.0\BD.deps.json
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\bin\Debug\net5.0\BD.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\bin\Debug\net5.0\ref\BD.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\bin\Debug\net5.0\BD.pdb
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\bin\Debug\net5.0\Entity.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\bin\Debug\net5.0\Entity.pdb
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\obj\Debug\net5.0\BD.csproj.CopyComplete
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\obj\Debug\net5.0\BD.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\obj\Debug\net5.0\ref\BD.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\obj\Debug\net5.0\BD.pdb

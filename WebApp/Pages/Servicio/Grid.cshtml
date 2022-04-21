@@ -1,0 +1,68 @@
+﻿@page
+@model WebApp.Pages.Servicio.GridModel
+@{
+}
+
+<div class="container-fluid">
+
+    <div class="card">
+        @*<h5 class="card-header">Parametros</h5>*@
+        <div class="card-body">
+            <h5 class="card-title fs-2 p-3">SERVICIO</h5>
+
+            <div class="row">
+                <div class="col-12">
+                    <table id="GridView" class="table table-bordered table-striped  table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>NOMBRE SERVICIO</th>
+                                <th>PLAZO ENTREGA</th>
+                                <th>COSTO SERVICIO</th>
+                                <th>ESTADO</th>
+                                <th>CUENTA CONTABLE</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+                            @foreach (var item in Model.GridList)
+                            {
+                            <tr>
+                                <td> @item.IdServicio</td>
+                                <td> @item.NombreServicio</td>
+                                <td> @item.PlazoEntrega</td>
+                                <td> @item.CostoServicio</td>
+                                <td> @item.estado</td>
+                                <td> @item.CuentaContable</td>
+                                <td>
+                                    <button type="button" class="btn btn-secondary" onclick="ParametroGrid.OnClickEliminar(@item.IdServicio)"><i class='bx bxs-trash'></i></button>
+                                </td>
+                            </tr>
+
+                            }
+                        </tbody>
+                    </table>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts{
+
+    <script>
+        var MensajeApp = "@Html.Raw(Model.Mensaje)";
+    </script>
+
+    <script defer src="~/App/Servicio/Grid.js"></script>
+
+}

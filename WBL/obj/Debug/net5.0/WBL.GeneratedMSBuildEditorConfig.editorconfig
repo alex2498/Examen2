@@ -3,12 +3,8 @@ build_property.TargetFramework = net5.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
 build_property.ProjectTypeGuids = 
-build_property.InvariantGlobalization = 
-build_property.PlatformNeutralAssembly = 
-build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = WBL
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\Pito\Desktop\Examen2\WBL\
-=======
-build_property.ProjectDir = C:\Users\David\OneDrive - Caja Costarricense de Seguro Social\UTC\Progra VI\Examen 2\V4\WBL\
->>>>>>> davis
+build_property.ProjectDir = D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\
