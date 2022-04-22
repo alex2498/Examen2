@@ -33,7 +33,7 @@ namespace WBL
         {
             try
             {
-                var result = sql.QueryAsync<SolicitudEntity, ClienteEntity, ServicioEntity>("dbo.SolicitudObtener", "IdSolicitud,IdCliente,IdServicio");
+                var result = sql.QueryAsync<SolicitudEntity>("dbo.SolicitudObtener");
                 return await result;
 
             }

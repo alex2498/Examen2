@@ -16,7 +16,6 @@ SET NOCOUNT ON
 	  BEGIN TRY
 	    INSERT INTO Solicitud
 		(
-	        IdSolicitud,
             IdCliente,
             IdServicio,
             Cantidad,
@@ -29,7 +28,6 @@ SET NOCOUNT ON
 		)
 		VALUES
 		(
-            @IdSolicitud,
             @IdCliente,
             @IdServicio,
             @Cantidad,

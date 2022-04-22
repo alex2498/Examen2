@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BaseDeDatos\obj\Debug\BaseDeDatos.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\examen2\BaseDeDatos\obj\Debug\BaseDeDatos.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
@@ -2087,6 +2087,7 @@ END]]></Value>
 				<Entry>
 					<Element Type="SqlSimpleColumn" Name="[dbo].[Solicitud].[IdSolicitud]">
 						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2241,7 +2242,6 @@ SET NOCOUNT ON
 	  
 	  BEGIN TRY
 	    UPDATE  Solicitud SET		
-		 IdSolicitud=@IdSolicitud,
          IdCliente=@IdCliente,
          IdServicio=@IdServicio,
          Cantidad=@Cantidad,
@@ -2274,12 +2274,6 @@ SET NOCOUNT ON
 			<Relationship Name="BodyDependencies">
 				<Entry>
 					<References Name="[dbo].[Solicitud]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[Solicitud].[IdSolicitud]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[SolicitudActualizar].[@IdSolicitud]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[Solicitud].[IdCliente]" />
@@ -2322,6 +2316,12 @@ SET NOCOUNT ON
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[SolicitudActualizar].[@Observaciones]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[IdSolicitud]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudActualizar].[@IdSolicitud]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="Parameters">
@@ -2456,7 +2456,7 @@ SET NOCOUNT ON
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="933" />
+				<Property Name="Length" Value="903" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[SolicitudActualizar]&#xD;&#xA;    @IdSolicitud INT,&#xD;&#xA;    @IdCliente INT,&#xD;&#xA;    @IdServicio INT,&#xD;&#xA;&#x9;@Cantidad INT,&#xD;&#xA;    @Monto DECIMAL (18,2) ,&#xD;&#xA;    @FechaEntrega DATETIME,&#xD;&#xA;    @UsuarioEntrega VARCHAR (50),&#xD;&#xA;&#x9;@Observaciones VARCHAR (250)&#xD;&#xA;&#xD;&#xA; &#xD;&#xA;AS" />
@@ -2540,7 +2540,6 @@ SET NOCOUNT ON
 	  BEGIN TRY
 	    INSERT INTO Solicitud
 		(
-	        IdSolicitud,
             IdCliente,
             IdServicio,
             Cantidad,
@@ -2553,7 +2552,6 @@ SET NOCOUNT ON
 		)
 		VALUES
 		(
-            @IdSolicitud,
             @IdCliente,
             @IdServicio,
             @Cantidad,
@@ -2586,9 +2584,6 @@ SET NOCOUNT ON
 					<References Name="[dbo].[Solicitud]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[Solicitud].[IdSolicitud]" />
-				</Entry>
-				<Entry>
 					<References Name="[dbo].[Solicitud].[IdCliente]" />
 				</Entry>
 				<Entry>
@@ -2608,9 +2603,6 @@ SET NOCOUNT ON
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[Solicitud].[Observaciones]" />
-				</Entry>
-				<Entry>
-					<References Name="[dbo].[SolicitudInsertar].[@IdSolicitud]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[SolicitudInsertar].[@IdCliente]" />
@@ -2766,7 +2758,7 @@ SET NOCOUNT ON
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="1058" />
+				<Property Name="Length" Value="1008" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[SolicitudInsertar]&#xD;&#xA;    @IdSolicitud INT,&#xD;&#xA;    @IdCliente INT,&#xD;&#xA;    @IdServicio INT,&#xD;&#xA;&#x9;@Cantidad INT,&#xD;&#xA;    @Monto DECIMAL (18,2) ,&#xD;&#xA;    @FechaEntrega DATETIME,&#xD;&#xA;    @UsuarioEntrega VARCHAR (50),&#xD;&#xA;&#x9;@Observaciones VARCHAR (250)&#xD;&#xA;&#xD;&#xA;AS" />

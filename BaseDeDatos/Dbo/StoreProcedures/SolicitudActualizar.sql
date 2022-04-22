@@ -16,7 +16,6 @@ SET NOCOUNT ON
 	  
 	  BEGIN TRY
 	    UPDATE  Solicitud SET		
-		 IdSolicitud=@IdSolicitud,
          IdCliente=@IdCliente,
          IdServicio=@IdServicio,
          Cantidad=@Cantidad,
