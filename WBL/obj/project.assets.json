@@ -5957,11 +5957,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\Examen2\\WBL\\WBL.csproj",
+      "projectUniqueName": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\examen2\\WBL\\WBL.csproj",
       "projectName": "WBL",
-      "projectPath": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\Examen2\\WBL\\WBL.csproj",
+      "projectPath": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\examen2\\WBL\\WBL.csproj",
       "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\Examen2\\WBL\\obj\\",
+      "outputPath": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\examen2\\WBL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5982,11 +5982,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\Examen2\\BD\\BD.csproj": {
-              "projectPath": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\Examen2\\BD\\BD.csproj"
+            "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\examen2\\BD\\BD.csproj": {
+              "projectPath": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\examen2\\BD\\BD.csproj"
             },
-            "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\Examen2\\Entity\\Entity.csproj": {
-              "projectPath": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\Examen2\\Entity\\Entity.csproj"
+            "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\examen2\\Entity\\Entity.csproj": {
+              "projectPath": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\examen2\\Entity\\Entity.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HgjatRl3fqGpjF/ruqGq3Ek8Qt+ZM+fro2+87/PhBqi8/lj8FSm0mrJMrLjaPipG7qjdQ1Uef+K0+mF9dvh8/g==",
+  "dgSpecHash": "5rQcgPaFu/vpON8zoMgY224gRqxsXrRnZNIyE9YUjZEYtbtop6icGeKezp3UTpFmj+4AX6Nh5BFPKG7FtqifPA==",
   "success": true,
-  "projectFilePath": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\Examen2\\WBL\\WBL.csproj",
+  "projectFilePath": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\examen2\\WBL\\WBL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alex\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\dapper.mapper\\2.0.0\\dapper.mapper.2.0.0.nupkg.sha512",

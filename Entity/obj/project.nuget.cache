@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1o1DFkFJFZXb1nyCsIJkAovOqwo9Zzv45RmkKW3orAHsiuLsGRam8S/ShEDdZSX4b9jjCvQFgeqLWqMJXOlVNQ==",
+  "dgSpecHash": "oo971NzZbl5LWwaVBo5ksPKO1CHxxl/VDOLQG11u48AISwAc3ICug0et/cj6DHJyLLCvf1pCwku4mORX4yhRnA==",
   "success": true,
-  "projectFilePath": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\Examen2\\Entity\\Entity.csproj",
+  "projectFilePath": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\examen2\\Entity\\Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alex\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\dapper.mapper\\2.0.0\\dapper.mapper.2.0.0.nupkg.sha512",
