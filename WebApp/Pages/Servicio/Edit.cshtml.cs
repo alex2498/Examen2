@@ -60,7 +60,7 @@ namespace WebApp.Pages.Servicio
                     {
                         var result = await servicio.Update(Entity);
                         if (result.CodeError != 0) throw new Exception(result.MsgError);
-                        TempData["Msg"] = "EL registro se actualizo correctamentre";
+                        TempData["Msg"] = "EL registro se actualizo correctamente";
 
 
                     }
@@ -68,7 +68,7 @@ namespace WebApp.Pages.Servicio
                     {   //Metodo de Inserción
                         var result = await servicio.Create(Entity);
                         if (result.CodeError != 0) throw new Exception(result.MsgError);
-                        TempData["Msg"] = "EL registro se agrego correctamentre";
+                        TempData["Msg"] = "EL registro se agrego correctamente";
 
 
                     }
