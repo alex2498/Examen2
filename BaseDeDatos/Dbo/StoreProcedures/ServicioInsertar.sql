@@ -1,5 +1,4 @@
 ﻿CREATE PROCEDURE [dbo].[ServicioInsertar]
-    @IdServicio INT,
     @NombreServicio VARCHAR (128),
     @PlazoEntrega INT,
     @CostoServicio DECIMAL (18,2) ,
@@ -13,7 +12,6 @@ SET NOCOUNT ON
 	  BEGIN TRY
 	    INSERT INTO Servicio
 		(
-	        IdServicio,
             NombreServicio,
             PlazoEntrega,
             CostoServicio,
@@ -23,7 +21,6 @@ SET NOCOUNT ON
 		)
 		VALUES
 		(
-            @IdServicio,
             @NombreServicio,
             @PlazoEntrega,
             @CostoServicio,

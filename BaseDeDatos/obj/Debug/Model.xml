@@ -1,0 +1,2901 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSchemaModel FileFormatVersion="1.2" SchemaVersion="2.9" DspName="Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider" CollationLcid="1033" CollationCaseSensitive="False" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+	<Header>
+		<CustomData Category="AnsiNulls">
+			<Metadata Name="AnsiNulls" Value="True" />
+		</CustomData>
+		<CustomData Category="QuotedIdentifier">
+			<Metadata Name="QuotedIdentifier" Value="True" />
+		</CustomData>
+		<CustomData Category="CompatibilityMode">
+			<Metadata Name="CompatibilityMode" Value="130" />
+		</CustomData>
+		<CustomData Category="Reference" Type="Assembly">
+			<Metadata Name="LogicalName" Value="BaseDeDatos.dll" />
+			<Metadata Name="FileName" Value="D:\UNIVERSIDAD\SEPTIMO CUATRIMESTRE\PROGRA\EXAMENES Y TAREAS\EXAMEN2\EXAMEN2\BASEDEDATOS\OBJ\DEBUG\BASEDEDATOS.DLL" />
+			<Metadata Name="AssemblyName" Value="BaseDeDatos" />
+			<Metadata Name="PermissionSet" Value="SAFE" />
+			<Metadata Name="Owner" Value="" />
+			<Metadata Name="GenerateSqlClrDdl" Value="True" />
+			<Metadata Name="IsVisible" Value="True" />
+			<Metadata Name="IsModelAware" Value="True" />
+			<Metadata Name="SkipCreationIfEmpty" Value="True" />
+			<Metadata Name="AssemblySymbolsName" Value="D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BaseDeDatos\obj\Debug\BaseDeDatos.pdb" />
+		</CustomData>
+		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
+	</Header>
+	<Model>
+		<Element Type="SqlDatabaseOptions">
+			<Property Name="Collation" Value="SQL_Latin1_General_CP1_CI_AS" />
+			<Property Name="IsAnsiNullDefaultOn" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="IsAnsiWarningsOn" Value="True" />
+			<Property Name="IsArithAbortOn" Value="True" />
+			<Property Name="IsConcatNullYieldsNullOn" Value="True" />
+			<Property Name="IsTornPageProtectionOn" Value="False" />
+			<Property Name="IsFullTextEnabled" Value="True" />
+			<Property Name="PageVerifyMode" Value="3" />
+			<Property Name="DefaultLanguage" Value="" />
+			<Property Name="DefaultFullTextLanguage" Value="" />
+			<Property Name="QueryStoreStaleQueryThreshold" Value="367" />
+			<Relationship Name="DefaultFilegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlDefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[1]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Servicio]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Servicio].[Estado]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="3" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Cliente]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[IdCliente]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="4" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[Identificacion]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[IdTipoIdentificacion]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[Nombre]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[PrimerApellido]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[SegundoApellido]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[FechaNacimiento]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[Nacionalidad]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[FechaDefuncion]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[Genero]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="1" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[NombreApellidosPadre]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[NombreApellidosMadre]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[Pasaporte]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[CuentaIBAN]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Cliente].[CorreoNotifica]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DataCompressionOptions">
+				<Entry>
+					<Element Type="SqlDataCompressionOption">
+						<Property Name="CompressionLevel" Value="2" />
+						<Property Name="PartitionNumber" Value="1" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ClienteActualizar]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[ BEGIN
+SET NOCOUNT ON
+
+    BEGIN TRANSACTION TRASA 
+	  
+	  BEGIN TRY
+	    UPDATE  Cliente SET		
+		 Identificacion=@Identificacion,
+         IdTipoIdentificacion=@IdTipoIdentificacion,
+         Nombre=@Nombre,
+         PrimerApellido=@PrimerApellido,
+         SegundoApellido=@SegundoApellido,
+         FechaNacimiento=@FechaNacimiento,
+         Nacionalidad=@Nacionalidad,
+         FechaDefuncion=@FechaDefuncion,
+         Genero=@Genero,
+         NombreApellidosPadre=@NombreApellidosPadre,
+         NombreApellidosMadre=@NombreApellidosMadre,
+         Pasaporte=@Pasaporte,
+         CuentaIBAN=@CuentaIBAN,
+         CorreoNotifica=@CorreoNotifica 
+		WHERE
+		     IdCliente=@IdCliente
+
+		COMMIT TRANSACTION TRASA
+		SELECT 0 AS CodeError, '' AS msgError
+
+	  END TRY 
+
+	  BEGIN CATCH
+
+	   SELECT 
+	         ERROR_NUMBER() AS CodeError,
+			 ERROR_MESSAGE() AS MsgError
+		 ROLLBACK TRANSACTION TRASA
+
+	  END CATCH
+	  
+    END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Cliente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Identificacion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@Identificacion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[IdTipoIdentificacion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@IdTipoIdentificacion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Nombre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@Nombre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[PrimerApellido]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@PrimerApellido]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[SegundoApellido]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@SegundoApellido]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[FechaNacimiento]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@FechaNacimiento]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Nacionalidad]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@Nacionalidad]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[FechaDefuncion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@FechaDefuncion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Genero]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@Genero]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[NombreApellidosPadre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@NombreApellidosPadre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[NombreApellidosMadre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@NombreApellidosMadre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Pasaporte]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@Pasaporte]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[CuentaIBAN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@CuentaIBAN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[CorreoNotifica]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@CorreoNotifica]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[IdCliente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteActualizar].[@IdCliente]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@IdCliente]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@Identificacion]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@IdTipoIdentificacion]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@Nombre]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@PrimerApellido]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@SegundoApellido]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@FechaNacimiento]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@Nacionalidad]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@FechaDefuncion]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@Genero]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="1" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@NombreApellidosPadre]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@NombreApellidosMadre]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@Pasaporte]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@CuentaIBAN]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteActualizar].[@CorreoNotifica]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1488" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ClienteActualizar]&#xD;&#xA;    @IdCliente INT,&#xD;&#xA;    @Identificacion VARCHAR (128),&#xD;&#xA;    @IdTipoIdentificacion INT,&#xD;&#xA;    @Nombre VARCHAR (128) ,&#xD;&#xA;    @PrimerApellido VARCHAR (128),&#xD;&#xA;    @SegundoApellido VARCHAR (128),&#xD;&#xA;    @FechaNacimiento DATETIME,&#xD;&#xA;    @Nacionalidad INT,&#xD;&#xA;    @FechaDefuncion DATETIME,&#xD;&#xA;    @Genero CHAR (1),&#xD;&#xA;    @NombreApellidosPadre VARCHAR (200),&#xD;&#xA;    @NombreApellidosMadre VARCHAR (200),&#xD;&#xA;    @Pasaporte VARCHAR (50),&#xD;&#xA;    @CuentaIBAN VARCHAR(50),&#xD;&#xA;    @CorreoNotifica VARCHAR(128) &#xD;&#xA;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ClienteEliminar]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[ BEGIN
+SET NOCOUNT ON
+
+    BEGIN TRANSACTION TRASA 
+	  
+	  BEGIN TRY
+
+		DELETE FROM Cliente WHERE IdCliente=@IdCliente
+
+		COMMIT TRANSACTION TRASA
+		SELECT 0 AS CodeError, '' AS msgError
+
+	  END TRY 
+
+	  BEGIN CATCH
+
+	   SELECT 
+	         ERROR_NUMBER() AS CodeError,
+			 ERROR_MESSAGE() AS MsgError
+		 ROLLBACK TRANSACTION TRASA
+
+	  END CATCH
+	  
+    END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Cliente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[IdCliente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteEliminar].[@IdCliente]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteEliminar].[@IdCliente]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="441" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ClienteEliminar]&#xD;&#xA;&#x9;@IdCliente INT&#xD;&#xA;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ClienteInsertar]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[ BEGIN
+SET NOCOUNT ON
+
+    BEGIN TRANSACTION TRASA 
+	  
+	  BEGIN TRY
+	    INSERT INTO Cliente
+		(
+	        Identificacion,
+            IdTipoIdentificacion,
+            Nombre,
+            PrimerApellido,
+            SegundoApellido,
+            FechaNacimiento,
+            Nacionalidad,
+            FechaDefuncion,
+            Genero,
+            NombreApellidosPadre,
+            NombreApellidosMadre,
+            Pasaporte,
+            CuentaIBAN,
+            CorreoNotifica 
+		)
+		VALUES
+		(
+            @Identificacion,
+            @IdTipoIdentificacion,
+            @Nombre,
+            @PrimerApellido,
+            @SegundoApellido,
+            @FechaNacimiento,
+            @Nacionalidad,
+            @FechaDefuncion,
+            @Genero,
+            @NombreApellidosPadre,
+            @NombreApellidosMadre,
+            @Pasaporte,
+            @CuentaIBAN,
+            @CorreoNotifica 
+		)
+		COMMIT TRANSACTION TRASA
+		SELECT 0 AS CodeError, '' AS MsgError
+
+	  END TRY 
+
+	  BEGIN CATCH
+
+	   SELECT 
+	         ERROR_NUMBER() AS CodeError,
+			 ERROR_MESSAGE() AS MsgError
+		 ROLLBACK TRANSACTION TRASA
+
+	  END CATCH
+	  
+    END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Cliente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Identificacion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[IdTipoIdentificacion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Nombre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[PrimerApellido]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[SegundoApellido]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[FechaNacimiento]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Nacionalidad]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[FechaDefuncion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Genero]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[NombreApellidosPadre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[NombreApellidosMadre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Pasaporte]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[CuentaIBAN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[CorreoNotifica]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteInsertar].[@Identificacion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteInsertar].[@IdTipoIdentificacion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteInsertar].[@Nombre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteInsertar].[@PrimerApellido]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteInsertar].[@SegundoApellido]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteInsertar].[@FechaNacimiento]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteInsertar].[@Nacionalidad]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteInsertar].[@FechaDefuncion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteInsertar].[@Genero]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteInsertar].[@NombreApellidosPadre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteInsertar].[@NombreApellidosMadre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteInsertar].[@Pasaporte]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteInsertar].[@CuentaIBAN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteInsertar].[@CorreoNotifica]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteInsertar].[@Identificacion]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteInsertar].[@IdTipoIdentificacion]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteInsertar].[@Nombre]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteInsertar].[@PrimerApellido]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteInsertar].[@SegundoApellido]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteInsertar].[@FechaNacimiento]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteInsertar].[@Nacionalidad]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteInsertar].[@FechaDefuncion]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteInsertar].[@Genero]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="1" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[char]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteInsertar].[@NombreApellidosPadre]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteInsertar].[@NombreApellidosMadre]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteInsertar].[@Pasaporte]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteInsertar].[@CuentaIBAN]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteInsertar].[@CorreoNotifica]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1689" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ClienteInsertar]&#xD;&#xA;&#x9;@Identificacion VARCHAR (128),&#xD;&#xA;    @IdTipoIdentificacion INT,&#xD;&#xA;    @Nombre VARCHAR (128) ,&#xD;&#xA;    @PrimerApellido VARCHAR (128),&#xD;&#xA;    @SegundoApellido VARCHAR (128),&#xD;&#xA;    @FechaNacimiento DATETIME,&#xD;&#xA;    @Nacionalidad INT,&#xD;&#xA;    @FechaDefuncion DATETIME,&#xD;&#xA;    @Genero CHAR (1),&#xD;&#xA;    @NombreApellidosPadre VARCHAR (200),&#xD;&#xA;    @NombreApellidosMadre VARCHAR (200),&#xD;&#xA;    @Pasaporte VARCHAR (50),&#xD;&#xA;    @CuentaIBAN VARCHAR(50),&#xD;&#xA;    @CorreoNotifica VARCHAR(128) &#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ClienteLista]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN 
+SET NOCOUNT ON
+
+SELECT
+	IdCliente
+	,Nombre
+
+FROM dbo.Cliente
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Cliente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[IdCliente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Nombre]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="127" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ClienteLista]&#xD;&#xA;&#x9;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ClienteObtener]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+	BEGIN
+	SET NOCOUNT ON
+	
+	SELECT 
+            IdCliente,
+	        Identificacion,
+            IdTipoIdentificacion,
+            Nombre,
+            PrimerApellido,
+            SegundoApellido,
+            FechaNacimiento,
+            Nacionalidad,
+            FechaDefuncion,
+            Genero,
+            NombreApellidosPadre,
+            NombreApellidosMadre,
+            Pasaporte,
+            CuentaIBAN,
+            CorreoNotifica
+	FROM 
+	     Cliente
+	WHERE 
+	    (@IdCliente IS NULL OR IdCliente=@IdCliente)
+
+	END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Cliente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[IdCliente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Identificacion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[IdTipoIdentificacion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Nombre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[PrimerApellido]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[SegundoApellido]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[FechaNacimiento]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Nacionalidad]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[FechaDefuncion]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Genero]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[NombreApellidosPadre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[NombreApellidosMadre]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[Pasaporte]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[CuentaIBAN]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Cliente].[CorreoNotifica]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ClienteObtener].[@IdCliente]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ClienteObtener].[@IdCliente]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="616" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ClienteObtener]&#xD;&#xA;@IdCliente INT = NULL&#xD;&#xA;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlDefaultConstraint" Name="[dbo].[DF_Servicio_cantidad]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((1))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Solicitud]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Solicitud].[Cantidad]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Solicitud_Cliente]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Solicitud].[IdCliente]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Solicitud]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Cliente].[IdCliente]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Cliente]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Solicitud_Servicio]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Solicitud].[IdServicio]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Solicitud]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Servicio].[IdServicio]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Servicio]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Cliente]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Cliente].[IdCliente]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Cliente]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="4" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Servicio]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Servicio].[IdServicio]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Servicio]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Solicitud]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Solicitud].[IdSolicitud]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Solicitud]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Servicio]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Servicio].[IdServicio]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="8" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Servicio].[NombreServicio]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Servicio].[PlazoEntrega]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Servicio].[CostoServicio]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Scale" Value="2" />
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Servicio].[Estado]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="3" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Servicio].[CuentaContable]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DataCompressionOptions">
+				<Entry>
+					<Element Type="SqlDataCompressionOption">
+						<Property Name="CompressionLevel" Value="2" />
+						<Property Name="PartitionNumber" Value="1" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ServicioActualizar]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[ BEGIN
+SET NOCOUNT ON
+
+    BEGIN TRANSACTION TRASA 
+	  
+	  BEGIN TRY
+	    UPDATE  Servicio SET		
+         NombreServicio=@NombreServicio,
+         PlazoEntrega=@PlazoEntrega,
+         CostoServicio=@CostoServicio,
+         Estado=@Estado,
+         CuentaContable=@CuentaContable
+        
+		WHERE
+		     IdServicio=@IdServicio
+
+		COMMIT TRANSACTION TRASA
+		SELECT 0 AS CodeError, '' AS msgError
+
+	  END TRY 
+
+	  BEGIN CATCH
+
+	   SELECT 
+	         ERROR_NUMBER() AS CodeError,
+			 ERROR_MESSAGE() AS MsgError
+		 ROLLBACK TRANSACTION TRASA
+
+	  END CATCH
+	  
+    END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Servicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[NombreServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ServicioActualizar].[@NombreServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[PlazoEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ServicioActualizar].[@PlazoEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[CostoServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ServicioActualizar].[@CostoServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[Estado]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ServicioActualizar].[@Estado]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[CuentaContable]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ServicioActualizar].[@CuentaContable]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[IdServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ServicioActualizar].[@IdServicio]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ServicioActualizar].[@IdServicio]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ServicioActualizar].[@NombreServicio]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ServicioActualizar].[@PlazoEntrega]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ServicioActualizar].[@CostoServicio]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Scale" Value="2" />
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ServicioActualizar].[@Estado]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ServicioActualizar].[@CuentaContable]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="814" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ServicioActualizar]&#xD;&#xA;    @IdServicio INT,&#xD;&#xA;    @NombreServicio VARCHAR (128),&#xD;&#xA;    @PlazoEntrega INT,&#xD;&#xA;    @CostoServicio DECIMAL (18,2) ,&#xD;&#xA;    @Estado BIT,&#xD;&#xA;    @CuentaContable VARCHAR (128)&#xD;&#xA; &#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ServicioEliminar]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[ BEGIN
+SET NOCOUNT ON
+
+    BEGIN TRANSACTION TRASA 
+	  
+	  BEGIN TRY
+
+		DELETE FROM Servicio WHERE IdServicio=@IdServicio
+
+		COMMIT TRANSACTION TRASA
+		SELECT 0 AS CodeError, '' AS msgError
+
+	  END TRY 
+
+	  BEGIN CATCH
+
+	   SELECT 
+	         ERROR_NUMBER() AS CodeError,
+			 ERROR_MESSAGE() AS MsgError
+		 ROLLBACK TRANSACTION TRASA
+
+	  END CATCH
+	  
+    END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Servicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[IdServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ServicioEliminar].[@IdServicio]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ServicioEliminar].[@IdServicio]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="446" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ServicioEliminar]&#xD;&#xA;&#x9;@IdServicio INT&#xD;&#xA;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ServicioInsertar]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[ BEGIN
+SET NOCOUNT ON
+
+    BEGIN TRANSACTION TRASA 
+	  
+	  BEGIN TRY
+	    INSERT INTO Servicio
+		(
+            NombreServicio,
+            PlazoEntrega,
+            CostoServicio,
+            Estado,
+            CuentaContable
+            
+		)
+		VALUES
+		(
+            @NombreServicio,
+            @PlazoEntrega,
+            @CostoServicio,
+            @Estado,
+            @CuentaContable
+            
+		)
+		COMMIT TRANSACTION TRASA
+		SELECT 0 AS CodeError, '' AS MsgError
+
+	  END TRY 
+
+	  BEGIN CATCH
+
+	   SELECT 
+	         ERROR_NUMBER() AS CodeError,
+			 ERROR_MESSAGE() AS MsgError
+		 ROLLBACK TRANSACTION TRASA
+
+	  END CATCH
+	  
+    END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Servicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[NombreServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[PlazoEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[CostoServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[Estado]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[CuentaContable]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ServicioInsertar].[@NombreServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ServicioInsertar].[@PlazoEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ServicioInsertar].[@CostoServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ServicioInsertar].[@Estado]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ServicioInsertar].[@CuentaContable]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ServicioInsertar].[@NombreServicio]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ServicioInsertar].[@PlazoEntrega]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ServicioInsertar].[@CostoServicio]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Scale" Value="2" />
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ServicioInsertar].[@Estado]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ServicioInsertar].[@CuentaContable]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="128" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="875" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ServicioInsertar]&#xD;&#xA;    @NombreServicio VARCHAR (128),&#xD;&#xA;    @PlazoEntrega INT,&#xD;&#xA;    @CostoServicio DECIMAL (18,2) ,&#xD;&#xA;    @Estado BIT,&#xD;&#xA;    @CuentaContable VARCHAR (128)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ServicioLista]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN 
+SET NOCOUNT ON
+
+SELECT
+	IdServicio
+	,NombreServicio
+
+FROM dbo.Servicio
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Servicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[IdServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[NombreServicio]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="135" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ServicioLista]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ServicioObtener]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+	BEGIN
+	SET NOCOUNT ON
+	
+	SELECT 
+            IdServicio,
+            NombreServicio,
+            PlazoEntrega,
+            CostoServicio,
+            Estado,
+            CuentaContable
+	FROM 
+	     Servicio
+	WHERE 
+	    (@IdServicio IS NULL OR IdServicio=@IdServicio)
+
+	END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Servicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[IdServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[NombreServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[PlazoEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[CostoServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[Estado]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Servicio].[CuentaContable]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[ServicioObtener].[@IdServicio]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[ServicioObtener].[@IdServicio]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="361" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ServicioObtener]&#xD;&#xA;@IdServicio INT = NULL&#xD;&#xA;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Solicitud]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Solicitud].[IdSolicitud]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="9" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Solicitud].[IdCliente]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="6" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Solicitud].[IdServicio]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="7" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Solicitud].[Cantidad]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="5" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Solicitud].[Monto]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Scale" Value="2" />
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Solicitud].[FechaEntrega]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Solicitud].[UsuarioEntrega]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Solicitud].[Observaciones]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="250" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DataCompressionOptions">
+				<Entry>
+					<Element Type="SqlDataCompressionOption">
+						<Property Name="CompressionLevel" Value="2" />
+						<Property Name="PartitionNumber" Value="1" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[SolicitudActualizar]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[ BEGIN
+SET NOCOUNT ON
+
+    BEGIN TRANSACTION TRASA 
+	  
+	  BEGIN TRY
+	    UPDATE  Solicitud SET		
+		 IdSolicitud=@IdSolicitud,
+         IdCliente=@IdCliente,
+         IdServicio=@IdServicio,
+         Cantidad=@Cantidad,
+         Monto=@Monto,
+         FechaEntrega=@FechaEntrega,
+		 UsuarioEntrega=@UsuarioEntrega,
+         Observaciones=@Observaciones
+
+        
+		WHERE
+		     IdSolicitud=@IdSolicitud
+
+		COMMIT TRANSACTION TRASA
+		SELECT 0 AS CodeError, '' AS msgError
+
+	  END TRY 
+
+	  BEGIN CATCH
+
+	   SELECT 
+	         ERROR_NUMBER() AS CodeError,
+			 ERROR_MESSAGE() AS MsgError
+		 ROLLBACK TRANSACTION TRASA
+
+	  END CATCH
+	  
+    END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Solicitud]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[IdSolicitud]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudActualizar].[@IdSolicitud]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[IdCliente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudActualizar].[@IdCliente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[IdServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudActualizar].[@IdServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[Cantidad]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudActualizar].[@Cantidad]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[Monto]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudActualizar].[@Monto]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[FechaEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudActualizar].[@FechaEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[UsuarioEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudActualizar].[@UsuarioEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[Observaciones]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudActualizar].[@Observaciones]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudActualizar].[@IdSolicitud]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudActualizar].[@IdCliente]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudActualizar].[@IdServicio]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudActualizar].[@Cantidad]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudActualizar].[@Monto]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Scale" Value="2" />
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudActualizar].[@FechaEntrega]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudActualizar].[@UsuarioEntrega]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudActualizar].[@Observaciones]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="250" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="933" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[SolicitudActualizar]&#xD;&#xA;    @IdSolicitud INT,&#xD;&#xA;    @IdCliente INT,&#xD;&#xA;    @IdServicio INT,&#xD;&#xA;&#x9;@Cantidad INT,&#xD;&#xA;    @Monto DECIMAL (18,2) ,&#xD;&#xA;    @FechaEntrega DATETIME,&#xD;&#xA;    @UsuarioEntrega VARCHAR (50),&#xD;&#xA;&#x9;@Observaciones VARCHAR (250)&#xD;&#xA;&#xD;&#xA; &#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[SolicitudEliminar]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[ BEGIN
+SET NOCOUNT ON
+
+    BEGIN TRANSACTION TRASA 
+	  
+	  BEGIN TRY
+
+		DELETE FROM Solicitud WHERE IdSolicitud=@IdSolicitud
+
+		COMMIT TRANSACTION TRASA
+		SELECT 0 AS CodeError, '' AS msgError
+
+	  END TRY 
+
+	  BEGIN CATCH
+
+	   SELECT 
+	         ERROR_NUMBER() AS CodeError,
+			 ERROR_MESSAGE() AS MsgError
+		 ROLLBACK TRANSACTION TRASA
+
+	  END CATCH
+	  
+    END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Solicitud]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[IdSolicitud]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudEliminar].[@IdSolicitud]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudEliminar].[@IdSolicitud]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="451" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[SolicitudEliminar]&#xD;&#xA;&#x9;@IdSolicitud INT&#xD;&#xA;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[SolicitudInsertar]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[ BEGIN
+SET NOCOUNT ON
+
+    BEGIN TRANSACTION TRASA 
+	  
+	  BEGIN TRY
+	    INSERT INTO Solicitud
+		(
+	        IdSolicitud,
+            IdCliente,
+            IdServicio,
+            Cantidad,
+            Monto,
+            FechaEntrega,
+			UsuarioEntrega,
+            Observaciones
+
+            
+		)
+		VALUES
+		(
+            @IdSolicitud,
+            @IdCliente,
+            @IdServicio,
+            @Cantidad,
+            @Monto,
+            @FechaEntrega,
+			@UsuarioEntrega,
+            @Observaciones
+
+            
+		)
+		COMMIT TRANSACTION TRASA
+		SELECT 0 AS CodeError, '' AS MsgError
+
+	  END TRY 
+
+	  BEGIN CATCH
+
+	   SELECT 
+	         ERROR_NUMBER() AS CodeError,
+			 ERROR_MESSAGE() AS MsgError
+		 ROLLBACK TRANSACTION TRASA
+
+	  END CATCH
+	  
+    END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Solicitud]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[IdSolicitud]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[IdCliente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[IdServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[Cantidad]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[Monto]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[FechaEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[UsuarioEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[Observaciones]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudInsertar].[@IdSolicitud]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudInsertar].[@IdCliente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudInsertar].[@IdServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudInsertar].[@Cantidad]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudInsertar].[@Monto]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudInsertar].[@FechaEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudInsertar].[@UsuarioEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudInsertar].[@Observaciones]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudInsertar].[@IdSolicitud]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudInsertar].[@IdCliente]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudInsertar].[@IdServicio]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudInsertar].[@Cantidad]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudInsertar].[@Monto]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Scale" Value="2" />
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudInsertar].[@FechaEntrega]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudInsertar].[@UsuarioEntrega]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudInsertar].[@Observaciones]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="250" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1058" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[SolicitudInsertar]&#xD;&#xA;    @IdSolicitud INT,&#xD;&#xA;    @IdCliente INT,&#xD;&#xA;    @IdServicio INT,&#xD;&#xA;&#x9;@Cantidad INT,&#xD;&#xA;    @Monto DECIMAL (18,2) ,&#xD;&#xA;    @FechaEntrega DATETIME,&#xD;&#xA;    @UsuarioEntrega VARCHAR (50),&#xD;&#xA;&#x9;@Observaciones VARCHAR (250)&#xD;&#xA;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[SolicitudLista]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN 
+SET NOCOUNT ON
+
+SELECT
+	IdSolicitud
+	,Cantidad
+
+FROM dbo.Solicitud
+
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Solicitud]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[IdSolicitud]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[Cantidad]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="132" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[SolicitudLista]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[SolicitudObtener]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+	BEGIN
+	SET NOCOUNT ON
+	
+	SELECT 
+           IdSolicitud,
+		   IdCliente,
+		   IdServicio,
+		   Cantidad,
+		   Monto,
+		   FechaEntrega,
+		   UsuarioEntrega,
+		   Observaciones
+	FROM 
+	     Solicitud
+	WHERE 
+	    (@IdSolicitud IS NULL OR IdSolicitud=@IdSolicitud)
+
+	END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Solicitud]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[IdSolicitud]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[IdCliente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[IdServicio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[Cantidad]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[Monto]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[FechaEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[UsuarioEntrega]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Solicitud].[Observaciones]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[SolicitudObtener].[@IdSolicitud]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[SolicitudObtener].[@IdSolicitud]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="360" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[SolicitudObtener]&#xD;&#xA;@IdSolicitud INT = NULL&#xD;&#xA;&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+	</Model>
+</DataSchemaModel>

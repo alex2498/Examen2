@@ -1,0 +1,24 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[ServicioActualizar] (Procedure)
+       [dbo].[ServicioEliminar] (Procedure)
+       [dbo].[ServicioInsertar] (Procedure)
+       [dbo].[ServicioLista] (Procedure)
+       [dbo].[ServicioObtener] (Procedure)
+       [dbo].[SolicitudActualizar] (Procedure)
+       [dbo].[SolicitudEliminar] (Procedure)
+       [dbo].[SolicitudInsertar] (Procedure)
+       [dbo].[SolicitudLista] (Procedure)
+       [dbo].[SolicitudObtener] (Procedure)
+
+** Supporting actions

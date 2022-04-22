@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "elIn+wy7bE17VQd1wSXYqH4chZwflqwRRRtBRYVKH/ybMB1/mYNouvBptPSs7Nw5jQh3+YVca1uOFTRJwCTXig==",
+  "dgSpecHash": "CN9TpzQwJGkCdDyBSjfH2QM/xS7w8tMyER5EQpPDMqgMJCmX1GnUMEa7HDzm0lW1WCy7xOFrZwEQpdAb2XjNFQ==",
   "success": true,
   "projectFilePath": "D:\\Universidad\\septimo cuatrimestre\\progra\\Examenes y tareas\\Examen2\\Examen2\\WebApp\\WebApp.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Alex\\.nuget\\packages\\microsoft.typescript.msbuild\\4.6.4\\microsoft.typescript.msbuild.4.6.4.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",

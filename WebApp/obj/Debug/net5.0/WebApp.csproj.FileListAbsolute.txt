@@ -374,3 +374,4 @@ D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\Web
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\obj\Debug\net5.0\Razor\Pages\Servicio\Edit.cshtml.g.cs
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\obj\Debug\net5.0\Razor\Pages\Servicio\Grid.cshtml.g.cs
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\obj\Debug\net5.0\Razor\Pages\Cliente\Grid.cshtml.g.cs
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\obj\Debug\net5.0\Razor\Pages\Cliente\Edit.cshtml.g.cs

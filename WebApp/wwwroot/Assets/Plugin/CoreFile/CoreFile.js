@@ -59,10 +59,10 @@ var CoreFile;
     };
     var SetFormatParametersUrl = function (URL) {
         if (URL.indexOf("?") == -1) {
-            return URL + "?Token=" + Math.random();
+            return "".concat(URL, "?Token=").concat(Math.random());
         }
         else {
-            return URL + "&Token=" + Math.random();
+            return "".concat(URL, "&Token=").concat(Math.random());
         }
     };
 })(CoreFile || (CoreFile = {}));

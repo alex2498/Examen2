@@ -1,0 +1,28 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Servicio]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[Servicio] (Default Constraint)
+     Table rebuild
+       [dbo].[Servicio] (Table)
+     Alter
+       [dbo].[ServicioInsertar] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_Solicitud_Servicio] (Foreign Key)
+     Create
+       [dbo].[FK_Solicitud_Servicio] (Foreign Key)
+     Refresh
+       [dbo].[ServicioActualizar] (Procedure)
+       [dbo].[ServicioEliminar] (Procedure)
+       [dbo].[ServicioLista] (Procedure)
+       [dbo].[ServicioObtener] (Procedure)

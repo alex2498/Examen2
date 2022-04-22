@@ -68,7 +68,7 @@ var VueLoaderTemplateAsync = function (Url) { return __awaiter(void 0, void 0, v
 var VueLoaderTemplate = function (url) {
     try {
         var ajax = new XMLHttpRequest();
-        ajax.open("GET", "" + url, false);
+        ajax.open("GET", "".concat(url), false);
         ajax.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
         ajax.setRequestHeader("Cache-Control", "no-cache,no-store");
         ajax.send();

@@ -13,7 +13,6 @@ SET NOCOUNT ON
 	  
 	  BEGIN TRY
 	    UPDATE  Servicio SET		
-		 IdServicio=@IdServicio,
          NombreServicio=@NombreServicio,
          PlazoEntrega=@PlazoEntrega,
          CostoServicio=@CostoServicio,

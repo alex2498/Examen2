@@ -1,0 +1,36 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Cliente] (Table)
+       [dbo].[Servicio] (Table)
+       [dbo].[Solicitud] (Table)
+       Default Constraint: unnamed constraint on [dbo].[Servicio] (Default Constraint)
+       [dbo].[DF_Servicio_cantidad] (Default Constraint)
+       [dbo].[FK_Solicitud_Cliente] (Foreign Key)
+       [dbo].[FK_Solicitud_Servicio] (Foreign Key)
+       [dbo].[ClienteActualizar] (Procedure)
+       [dbo].[ClienteEliminar] (Procedure)
+       [dbo].[ClienteInsertar] (Procedure)
+       [dbo].[ClienteLista] (Procedure)
+       [dbo].[ClienteObtener] (Procedure)
+       [dbo].[ServicioActualizar] (Procedure)
+       [dbo].[ServicioEliminar] (Procedure)
+       [dbo].[ServicioInsertar] (Procedure)
+       [dbo].[ServicioLista] (Procedure)
+       [dbo].[ServicioObtener] (Procedure)
+       [dbo].[SolicitudActualizar] (Procedure)
+       [dbo].[SolicitudEliminar] (Procedure)
+       [dbo].[SolicitudInsertar] (Procedure)
+       [dbo].[SolicitudLista] (Procedure)
+       [dbo].[SolicitudObtener] (Procedure)
+
+** Supporting actions
