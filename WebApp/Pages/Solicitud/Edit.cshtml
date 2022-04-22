@@ -2,3 +2,62 @@
 @model WebApp.Pages.Solicitud.EditModel
 @{
 }
+<div id="AppEdit" class="container">
+    <div class="card">
+        <div class="card-header">
+            @(Model.id.HasValue?"Actualizar":"Nuevo")
+        </div>
+        <div class="card-body">
+            <form id="FormEdit" method="post">
+                <input type="hidden" asp-for="Entity.IdSolicitud" />
+
+                <div class="form-group mb-3">
+                    <label for="Entity.Identificacion" class="form-label">ID solicitud</label>
+                    <input type="text" class="form-control" asp-for="Entity.IdSolicitud" maxlength="250" required>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="Entity.Nombre" class="form-label">ID cliente</label>
+                    <input type="text" class="form-control" asp-for="Entity.IdCliente" maxlength="250" required>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="Entity.PrimerApellido" class="form-label">ID servicio</label>
+                    <input type="text" class="form-control" asp-for="Entity.IdServicio" maxlength="250" required>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="Entity.SegundoApellido" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" asp-for="Entity.Cantidad" maxlength="250" required>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="Entity.Edad" class="form-label">Monto</label>
+                    <input type="number" class="form-control" asp-for="Entity.Monto" maxlength="250" required>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="Entity.FechaNacimiento" class="form-label">Fecha de entrega</label>
+                    <input type="date" class="form-control" asp-for="Entity.FechaEntrega" maxlength="250" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="Entity.PrimerApellido" class="form-label">Usuario entrega</label>
+                    <input type="text" class="form-control" asp-for="Entity.usuarioEntrega" maxlength="250" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="Entity.PrimerApellido" class="form-label">Observaciones</label>
+                    <input type="text" class="form-control" asp-for="Entity.observaciones" maxlength="250" required>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-primary">
+                            @(Model.id.HasValue?"Actualizar":"Agregar")
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    .
+</div>

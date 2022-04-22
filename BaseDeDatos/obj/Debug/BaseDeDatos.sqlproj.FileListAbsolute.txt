@@ -1,0 +1,6 @@
+C:\GIT\Examen2\BaseDeDatos\bin\Debug\BaseDeDatos.dacpac
+C:\GIT\Examen2\BaseDeDatos\bin\Debug\BaseDeDatos.dll
+C:\GIT\Examen2\BaseDeDatos\bin\Debug\BaseDeDatos.pdb
+C:\GIT\Examen2\BaseDeDatos\obj\Debug\BaseDeDatos.sqlproj.AssemblyReference.cache
+C:\GIT\Examen2\BaseDeDatos\obj\Debug\BaseDeDatos.dll
+C:\GIT\Examen2\BaseDeDatos\obj\Debug\BaseDeDatos.pdb
