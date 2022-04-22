@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uC1KMEWEyZAZnKu45IQvvXIVyqef3i5iuVazpBKw2CqQKVpPlbI+GIUnIEwh/KjfHvoXOtTObcIZCLkR8Gxn5A==",
+  "dgSpecHash": "X6oqKuYJljse8O4zLiCARPoCJcUPiU9/Grn1Uu7c3zubPpq80F3lNabrxN7ge+l6481qyqKKxUbzNpxE+LclvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pito\\Desktop\\Examen2\\BD\\BD.csproj",
+  "projectFilePath": "C:\\Users\\Pito\\Desktop\\Examen2v2\\BD\\BD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pito\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Pito\\.nuget\\packages\\dapper.mapper\\2.0.0\\dapper.mapper.2.0.0.nupkg.sha512",

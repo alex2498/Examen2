@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class ClienteEntity  
+    public class ClienteEntity:DBEntity
     {
         public ClienteEntity()
         {
@@ -15,8 +15,8 @@ namespace Entity
         }
 
         public int? IdCliente  { get; set; }
-        public int? IdServicio { get; set; }
-        public int? IdSolicitud { get; set; }
+        //public int? IdServicio { get; set; }
+        //public int? IdSolicitud { get; set; }
 
         public virtual ServicioEntity Servicio{ get; set; }
         public string Identificacion { get; set; }

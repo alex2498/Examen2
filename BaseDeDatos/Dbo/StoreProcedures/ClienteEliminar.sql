@@ -8,7 +8,7 @@ SET NOCOUNT ON
 	  
 	  BEGIN TRY
 
-		DELETE FROM Cliente WHERE IdCliente=@IdCliente
+		DELETE FROM dbo.Cliente WHERE IdCliente=@IdCliente
 
 		COMMIT TRANSACTION TRASA
 		SELECT 0 AS CodeError, '' AS msgError

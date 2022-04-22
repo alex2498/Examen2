@@ -1,0 +1,132 @@
+﻿@page
+@model WebApp.Pages.Cliente.EditModel
+@{
+}
+
+
+<div id="AppEdit" class="container">
+<div class= "card">
+    <div class= "card-header">
+        Cliente
+    </div>
+
+    <div class= "card-body">
+        <form id= "FormEdit" method="post">
+            <input type= "hidden"asp-for="Entity.IdCliente"/>
+
+              <div class= "mb-3">
+                <label for ="Entity.Identificacion"class="form-label">Identificacion</label>
+                <input type="text"class="form-control"asp-for="Entity.Identificacion" maxlegth="250" required>
+
+               </div>
+
+                <div class= "mb-3">
+                <label for ="Entity.Nombre"class="form-label">Nombre</label>
+                <input type="text"class="form-control"asp-for="Entity.Nombre" maxlegth="250" required>
+
+               </div>
+
+
+                 </div>
+
+                <div class= "mb-3">
+                <label for ="Entity.PrimerApellido"class="form-label">PrimerApellido</label>
+                <input type="text"class="form-control"asp-for="Entity.PrimerApellido" maxlegth="250" required>
+
+               </div>
+
+                 </div>
+
+                <div class= "mb-3">
+                <label for ="Entity.SegundoApellido"class="form-label">SegundoApellido</label>
+                <input type="text"class="form-control"asp-for="Entity.SegundoApellido" maxlegth="250" required>
+
+               </div>
+
+                 </div>
+
+                <div class= "mb-3">
+                <label for ="Entity.FechaNacimiento"class="form-label">FechaNacimiento</label>
+                <input type="text"class="form-control"asp-for="Entity.FechaNacimiento" maxlegth="250" required>
+
+               </div>
+
+                <div class= "mb-3">
+                <label for ="Entity.Nacionalidad"class="form-label">Nacionalidad</label>
+                <input type="text"class="form-control"asp-for="Entity.Nacionalidad" maxlegth="250" required>
+
+               </div>
+
+                    
+
+                <div class= "mb-3">
+                <label for ="Entity.FechaDeFuncion"class="form-label">FechaDeFuncion</label>
+                <input type="text"class="form-control"asp-for="Entity.FechaDeFuncion" maxlegth="250" required>
+
+               </div>
+
+                
+
+                <div class= "mb-3">
+                <label for ="Entity.Genero"class="form-label">Genero</label>
+                <input type="text"class="form-control"asp-for="Entity.Genero" maxlegth="250" required>
+
+               </div>
+
+                <div class= "mb-3">
+                <label for ="Entity.NombreApellidosPadre"class="form-label">NombreApellidosPadre</label>
+                <input type="text"class="form-control"asp-for="Entity.NombreApellidosPadre" maxlegth="250" required>
+
+               </div>
+
+                <div class= "mb-3">
+                <label for ="Entity.NombreApellidosMadre"class="form-label">NombreApellidosMadre</label>
+                <input type="text"class="form-control"asp-for="Entity.NombreApellidosMadre" maxlegth="250" required>
+
+               </div>
+
+                <div class= "mb-3">
+                <label for ="Entity.Pasaporte"class="form-label">Pasaporte</label>
+                <input type="text"class="form-control"asp-for="Entity.Pasaporte" maxlegth="250" required>
+
+               </div>
+
+                <div class= "mb-3">
+                <label for ="Entity.CuentaIBAN"class="form-label">CuentaIBAN</label>
+                <input type="text"class="form-control"asp-for="Entity.CuentaIBAN" maxlegth="250" required>
+
+               </div>
+
+               <div class= "mb-3">
+                <label for ="Entity.CorreoNotifica"class="form-label">CorreoNotifica</label>
+                <input type="text"class="form-control"asp-for="Entity.CorreoNotifica" maxlegth="250" required>
+
+               </div>
+
+
+               <div class= "row">
+                   <button class= "col-4">
+                       button type="button" class="btn btn-primary">
+                       @(Model.id.HasValue? "Actualizar": "Agregar")
+                       </button>
+
+                   </div>
+
+                   
+
+                   </div>
+
+
+
+
+           
+
+           
+        </div>
+
+</div>
+
+
+
+      
+

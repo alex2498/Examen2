@@ -10,8 +10,8 @@ using System.Threading.Tasks;
 
 namespace WBL
 {
-    public class ServicioServices
-    {
+   
+       
         public interface IServicioService
         {
             Task<DBEntity> Create(ServicioEntity entity);
@@ -37,7 +37,7 @@ namespace WBL
             {
                 try
                 {
-                    var result = sql.QueryAsync<ServicioEntity, ClienteEntity, ServicioEntity>("dbo.ServicioObtener", "IdServicio,IdCliente,IdServicio");
+                    var result = sql.QueryAsync<ServicioEntity>("dbo.ServicioObtener");
                     return await result;
 
                 }
@@ -137,4 +137,4 @@ namespace WBL
 
         }
     }
-}
+

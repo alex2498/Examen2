@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pito\\Desktop\\Examen2\\WBL\\WBL.csproj": {}
+    "C:\\Users\\Pito\\Desktop\\Examen2v2\\WBL\\WBL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pito\\Desktop\\Examen2\\BD\\BD.csproj": {
+    "C:\\Users\\Pito\\Desktop\\Examen2v2\\BD\\BD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pito\\Desktop\\Examen2\\BD\\BD.csproj",
+        "projectUniqueName": "C:\\Users\\Pito\\Desktop\\Examen2v2\\BD\\BD.csproj",
         "projectName": "BD",
-        "projectPath": "C:\\Users\\Pito\\Desktop\\Examen2\\BD\\BD.csproj",
+        "projectPath": "C:\\Users\\Pito\\Desktop\\Examen2v2\\BD\\BD.csproj",
         "packagesPath": "C:\\Users\\Pito\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pito\\Desktop\\Examen2\\BD\\obj\\",
+        "outputPath": "C:\\Users\\Pito\\Desktop\\Examen2v2\\BD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pito\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Pito\\Desktop\\Examen2\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Pito\\Desktop\\Examen2\\Entity\\Entity.csproj"
+              "C:\\Users\\Pito\\Desktop\\Examen2v2\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Pito\\Desktop\\Examen2v2\\Entity\\Entity.csproj"
               }
             }
           }
@@ -98,14 +98,14 @@
         }
       }
     },
-    "C:\\Users\\Pito\\Desktop\\Examen2\\Entity\\Entity.csproj": {
+    "C:\\Users\\Pito\\Desktop\\Examen2v2\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pito\\Desktop\\Examen2\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Pito\\Desktop\\Examen2v2\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\Pito\\Desktop\\Examen2\\Entity\\Entity.csproj",
+        "projectPath": "C:\\Users\\Pito\\Desktop\\Examen2v2\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\Pito\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pito\\Desktop\\Examen2\\Entity\\obj\\",
+        "outputPath": "C:\\Users\\Pito\\Desktop\\Examen2v2\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pito\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -184,14 +184,14 @@
         }
       }
     },
-    "C:\\Users\\Pito\\Desktop\\Examen2\\WBL\\WBL.csproj": {
+    "C:\\Users\\Pito\\Desktop\\Examen2v2\\WBL\\WBL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pito\\Desktop\\Examen2\\WBL\\WBL.csproj",
+        "projectUniqueName": "C:\\Users\\Pito\\Desktop\\Examen2v2\\WBL\\WBL.csproj",
         "projectName": "WBL",
-        "projectPath": "C:\\Users\\Pito\\Desktop\\Examen2\\WBL\\WBL.csproj",
+        "projectPath": "C:\\Users\\Pito\\Desktop\\Examen2v2\\WBL\\WBL.csproj",
         "packagesPath": "C:\\Users\\Pito\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pito\\Desktop\\Examen2\\WBL\\obj\\",
+        "outputPath": "C:\\Users\\Pito\\Desktop\\Examen2v2\\WBL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pito\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -208,11 +208,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Pito\\Desktop\\Examen2\\BD\\BD.csproj": {
-                "projectPath": "C:\\Users\\Pito\\Desktop\\Examen2\\BD\\BD.csproj"
+              "C:\\Users\\Pito\\Desktop\\Examen2v2\\BD\\BD.csproj": {
+                "projectPath": "C:\\Users\\Pito\\Desktop\\Examen2v2\\BD\\BD.csproj"
               },
-              "C:\\Users\\Pito\\Desktop\\Examen2\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Pito\\Desktop\\Examen2\\Entity\\Entity.csproj"
+              "C:\\Users\\Pito\\Desktop\\Examen2v2\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Pito\\Desktop\\Examen2v2\\Entity\\Entity.csproj"
               }
             }
           }

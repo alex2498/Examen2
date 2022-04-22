@@ -175,5 +175,26 @@ namespace WBL
 
         #endregion
 
+        #region MyRegion
+
+
+        //Metodo GET
+        public async Task<IEnumerable<ClienteEntity>> GetList()
+        {
+            try
+            {
+                var result = sql.QueryAsync<ClienteEntity>("dbo.ClienteLista");
+                return await result;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        #endregion
+
     }
 }
