@@ -18,124 +18,119 @@ namespace WBL
         Task<DBEntity> Update(ServicioEntity entity);
     }
 
-
-    public class ServicioServices
+    public class ServicioService : IServicioService
     {
-    
-        public class ServicioService : IServicioService
+        //Constructor
+        private readonly IDataAccess sql;
+        public ServicioService(IDataAccess _Sql)
         {
-            //Constructor
-            private readonly IDataAccess sql;
-            public ServicioService(IDataAccess _Sql)
-            {
-                sql = _Sql;
-            }
-
-            #region Metodos CRUD
-            //Metodos CRUD
-            //Metodo GET
-            public async Task<IEnumerable<ServicioEntity>> Get()
-            {
-                try
-                {
-                    var result = sql.QueryAsync<ServicioEntity, ClienteEntity, ServicioEntity>("dbo.ServicioObtener", "IdServicio,IdCliente,IdServicio");
-                    return await result;
-
-                }
-                catch (Exception)
-                {
-
-                    throw;
-                }
-            }
-
-
-            //Metodo GetById
-            public async Task<ServicioEntity> GetById(ServicioEntity entity)
-            {
-                try
-                {
-                    var result = sql.QueryFirstAsync<ServicioEntity>("dbo.ServicioObtener", new { entity.IdServicio });
-                    return await result;
-
-                }
-                catch (Exception)
-                {
-
-                    throw;
-                }
-            }
-
-            //Metodo create 
-            public async Task<DBEntity> Create(ServicioEntity entity)
-            {
-                try
-                {
-                    var result = sql.ExecuteAsync("dbo.ServicioInsertar",
-                        new
-                        {
-                            entity.IdServicio,
-                            entity.NombreServicio,
-                            entity.PlazoEntrega,
-                            entity.CostoServicio,
-                            entity.estado,
-                            entity.CuentaContable,                           
-
-                        });
-                    return await result;
-
-                }
-                catch (Exception)
-                {
-
-                    throw;
-                }
-            }
-
-            //Metodo Update 
-            public async Task<DBEntity> Update(ServicioEntity entity)
-            {
-                try
-                {
-                    var result = sql.ExecuteAsync("dbo.ServicioActualizar",
-                        new
-                        {
-                            entity.IdServicio,
-                            entity.NombreServicio,
-                            entity.PlazoEntrega,
-                            entity.CostoServicio,
-                            entity.estado,
-                            entity.CuentaContable,
-
-                        });
-                    return await result;
-
-                }
-                catch (Exception)
-                {
-
-                    throw;
-                }
-            }
-
-
-            //Metodo Delete 
-            public async Task<DBEntity> Delete(ServicioEntity entity)
-            {
-                try
-                {
-                    var result = sql.ExecuteAsync("dbo.ServicioEliminar", new { entity.IdServicio });
-                    return await result;
-
-                }
-                catch (Exception)
-                {
-
-                    throw;
-                }
-            }
-            #endregion
-
+            sql = _Sql;
         }
+
+        #region Metodos CRUD
+        //Metodos CRUD
+        //Metodo GET
+        public async Task<IEnumerable<ServicioEntity>> Get()
+        {
+            try
+            {
+                var result = sql.QueryAsync<ServicioEntity>("dbo.ServicioObtener");
+                return await result;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+
+        //Metodo GetById
+        public async Task<ServicioEntity> GetById(ServicioEntity entity)
+        {
+            try
+            {
+                var result = sql.QueryFirstAsync<ServicioEntity>("dbo.ServicioObtener", new { entity.IdServicio });
+                return await result;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        //Metodo create 
+        public async Task<DBEntity> Create(ServicioEntity entity)
+        {
+            try
+            {
+                var result = sql.ExecuteAsync("dbo.ServicioInsertar",
+                    new
+                    {
+                        entity.IdServicio,
+                        entity.NombreServicio,
+                        entity.PlazoEntrega,
+                        entity.CostoServicio,
+                        entity.estado,
+                        entity.CuentaContable,
+
+                    });
+                return await result;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        //Metodo Update 
+        public async Task<DBEntity> Update(ServicioEntity entity)
+        {
+            try
+            {
+                var result = sql.ExecuteAsync("dbo.ServicioActualizar",
+                    new
+                    {
+                        entity.IdServicio,
+                        entity.NombreServicio,
+                        entity.PlazoEntrega,
+                        entity.CostoServicio,
+                        entity.estado,
+                        entity.CuentaContable,
+
+                    });
+                return await result;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+
+        //Metodo Delete 
+        public async Task<DBEntity> Delete(ServicioEntity entity)
+        {
+            try
+            {
+                var result = sql.ExecuteAsync("dbo.ServicioEliminar", new { entity.IdServicio });
+                return await result;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        #endregion
+
     }
 }

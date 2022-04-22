@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\NewFolder\" />
+    <Folder Include="Pages\Solicitud\" />
     <Folder Include="wwwroot\App\" />
   </ItemGroup>
 

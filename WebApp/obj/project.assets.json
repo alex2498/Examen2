@@ -1668,6 +1668,7 @@
           "Dapper": "2.0.123",
           "Dapper.Mapper": "2.0.0",
           "Entity": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.6",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "System.Data.SqlClient": "4.8.3"
@@ -1685,6 +1686,7 @@
         "dependencies": {
           "Dapper": "2.0.123",
           "Dapper.Mapper": "2.0.0",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.6",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "System.Data.SqlClient": "4.8.3"
         },
@@ -1703,6 +1705,7 @@
           "Dapper": "2.0.123",
           "Dapper.Mapper": "2.0.0",
           "Entity": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "5.0.6",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "System.Data.SqlClient": "4.8.3"
         },

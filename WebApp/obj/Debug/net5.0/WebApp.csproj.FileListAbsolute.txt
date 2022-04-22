@@ -87,7 +87,6 @@ D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\Web
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\Microsoft.CSharp.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\Microsoft.Extensions.Caching.Abstractions.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\Microsoft.Extensions.Caching.Memory.dll
-D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.Binder.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.CommandLine.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\Microsoft.Extensions.Configuration.dll
@@ -125,7 +124,6 @@ D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\Web
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.DataAnnotations.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\Microsoft.Extensions.Options.dll
-D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\Microsoft.Extensions.Primitives.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\Microsoft.Extensions.WebEncoders.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\Microsoft.JSInterop.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\Microsoft.Net.Http.Headers.dll
@@ -225,7 +223,6 @@ D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\Web
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\System.Resources.Reader.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\System.Resources.ResourceManager.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\System.Resources.Writer.dll
-D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\System.Runtime.CompilerServices.Unsafe.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\System.Runtime.CompilerServices.VisualC.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\System.Runtime.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\refs\System.Runtime.Extensions.dll
@@ -365,3 +362,15 @@ D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\Web
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\obj\Debug\net5.0\ref\WebApp.dll
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\obj\Debug\net5.0\WebApp.pdb
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\obj\Debug\net5.0\WebApp.genruntimeconfig.cache
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\BD.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\Entity.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\WBL.dll
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\Entity.pdb
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\WBL.pdb
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\bin\Debug\net5.0\BD.pdb
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\obj\Debug\net5.0\Razor\Pages\Servicio\Edit.cshtml.g.cs
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\obj\Debug\net5.0\Razor\Pages\Servicio\Grid.cshtml.g.cs
+D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WebApp\obj\Debug\net5.0\Razor\Pages\Cliente\Grid.cshtml.g.cs

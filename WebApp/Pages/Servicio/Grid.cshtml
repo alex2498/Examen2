@@ -21,6 +21,7 @@
                                 <th>COSTO SERVICIO</th>
                                 <th>ESTADO</th>
                                 <th>CUENTA CONTABLE</th>
+                                <th>ACCION</th>
 
                             </tr>
 
@@ -37,7 +38,7 @@
                                 <td> @item.estado</td>
                                 <td> @item.CuentaContable</td>
                                 <td>
-                                    <button type="button" class="btn btn-secondary" onclick="ParametroGrid.OnClickEliminar(@item.IdServicio)"><i class='bx bxs-trash'></i></button>
+                                    <button type="button" class="btn btn-secondary" onclick="ServicioGrid.OnClickEliminar(@item.IdServicio)"><i class='bx bxs-trash'></i></button>
                                 </td>
                             </tr>
 

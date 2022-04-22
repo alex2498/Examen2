@@ -1,4 +1,4 @@
-﻿namespace ClienteGrid {
+﻿namespace ServicioGrid {
     declare var MensajeApp;
 
     if (MensajeApp != "") {
@@ -12,7 +12,7 @@
             .then(result => {
 
                 if (result.isConfirmed) {
-                    window.location.href = "Cliente/Grid?handler=Eliminar&id=" + id;
+                    window.location.href = "Servicio/Grid?handler=Eliminar&id=" + id;
 
                 }
             });

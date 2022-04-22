@@ -13,6 +13,6 @@ namespace Entity
         public int? PlazoEntrega { get; set; }
         public double? CostoServicio { get; set; }
         public string estado { get; set; }
-        public byte? CuentaContable { get; set; }
+        public string CuentaContable { get; set; }
     }
 }
