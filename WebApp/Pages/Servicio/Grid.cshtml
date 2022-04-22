@@ -1,5 +1,5 @@
 ﻿@page
-@model WebApp.Pages.Servicio.GridModel
+@model  WebApp.Pages.Servicio.GridModel
 @{
 }
 
@@ -10,6 +10,8 @@
         <div class="card-body">
             <h5 class="card-title fs-2 p-3">SERVICIO</h5>
 
+
+            <a class="btn btn-secondary" asp-page="Edit"><i class='bx bxs-add-to-queue'></i></a>
             <div class="row">
                 <div class="col-12">
                     <table id="GridView" class="table table-bordered table-striped  table-hover">
@@ -30,17 +32,18 @@
                         <tbody>
                             @foreach (var item in Model.GridList)
                             {
-                            <tr>
-                                <td> @item.IdServicio</td>
-                                <td> @item.NombreServicio</td>
-                                <td> @item.PlazoEntrega</td>
-                                <td> @item.CostoServicio</td>
-                                <td> @item.estado</td>
-                                <td> @item.CuentaContable</td>
-                                <td>
-                                    <button type="button" class="btn btn-secondary" onclick="ServicioGrid.OnClickEliminar(@item.IdServicio)"><i class='bx bxs-trash'></i></button>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td> @item.IdServicio</td>
+                                    <td> @item.NombreServicio</td>
+                                    <td> @item.PlazoEntrega</td>
+                                    <td> @item.CostoServicio</td>
+                                    <td> @item.estado</td>
+                                    <td> @item.CuentaContable</td>
+                                    <td>
+                                        <a class="btn btn-secondary" asp-page="Edit" asp-route-id="@item.IdServicio"><i class='bx bx-edit'></i></a>
+                                        <button type="button" class="btn btn-secondary" onclick="ServicioGrid.OnClickEliminar(@item.IdServicio)"><i class='bx bxs-trash'></i></button>
+                                    </td>
+                                </tr>
 
                             }
                         </tbody>
