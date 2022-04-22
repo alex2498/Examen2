@@ -12,40 +12,35 @@
                 <input type="hidden" asp-for="Entity.IdSolicitud" />
 
                 <div class="form-group mb-3">
-                    <label for="Entity.Identificacion" class="form-label">ID solicitud</label>
-                    <input type="text" class="form-control" asp-for="Entity.IdSolicitud" maxlength="250" required>
-                </div>
-
-                <div class="form-group mb-3">
-                    <label for="Entity.Nombre" class="form-label">ID cliente</label>
+                    <label for="Entity.IdCliente" class="form-label">ID cliente</label>
                     <input type="text" class="form-control" asp-for="Entity.IdCliente" maxlength="250" required>
                 </div>
 
                 <div class="form-group mb-3">
-                    <label for="Entity.PrimerApellido" class="form-label">ID servicio</label>
+                    <label for="Entity.IdServicio" class="form-label">ID servicio</label>
                     <input type="text" class="form-control" asp-for="Entity.IdServicio" maxlength="250" required>
                 </div>
 
                 <div class="form-group mb-3">
-                    <label for="Entity.SegundoApellido" class="form-label">Cantidad</label>
+                    <label for="Entity.Cantidad" class="form-label">Cantidad</label>
                     <input type="number" class="form-control" asp-for="Entity.Cantidad" maxlength="250" required>
                 </div>
 
                 <div class="form-group mb-3">
-                    <label for="Entity.Edad" class="form-label">Monto</label>
+                    <label for="Entity.Montod" class="form-label">Monto</label>
                     <input type="number" class="form-control" asp-for="Entity.Monto" maxlength="250" required>
                 </div>
 
                 <div class="form-group mb-3">
-                    <label for="Entity.FechaNacimiento" class="form-label">Fecha de entrega</label>
+                    <label for="Entity.FechaEntrega" class="form-label">Fecha de entrega</label>
                     <input type="date" class="form-control" asp-for="Entity.FechaEntrega" maxlength="250" required>
                 </div>
                 <div class="form-group mb-3">
-                    <label for="Entity.PrimerApellido" class="form-label">Usuario entrega</label>
+                    <label for="Entity.usuarioEntrega" class="form-label">Usuario entrega</label>
                     <input type="text" class="form-control" asp-for="Entity.usuarioEntrega" maxlength="250" required>
                 </div>
                 <div class="form-group mb-3">
-                    <label for="Entity.PrimerApellido" class="form-label">Observaciones</label>
+                    <label for="Entity.observaciones" class="form-label">Observaciones</label>
                     <input type="text" class="form-control" asp-for="Entity.observaciones" maxlength="250" required>
                 </div>
                 <div class="row">
@@ -59,5 +54,9 @@
             </form>
         </div>
     </div>
-    .
 </div>
+@section Scripts{
+
+    <script defer src="~/App/Solicitud/Edit.js"></script>
+
+}

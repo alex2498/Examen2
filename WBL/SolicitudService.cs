@@ -27,13 +27,13 @@ namespace WBL
         }
 
         #region Metodos CRUD
-        //Metodos CRUD
+        ////Metodos CRUD
         //Metodo GET
         public async Task<IEnumerable<SolicitudEntity>> Get()
         {
             try
             {
-                var result = sql.QueryAsync<SolicitudEntity>("dbo.SolicitudObtener", "IdSolicitud");
+                var result = sql.QueryAsync<SolicitudEntity>("dbo.SolicitudObtener");
                 return await result;
 
             }
@@ -76,7 +76,7 @@ namespace WBL
                         entity.Monto,
                         entity.FechaEntrega,
                         entity.usuarioEntrega,
-                        entity.observaciones,
+                        entity.observaciones
 
 
                     });
@@ -105,7 +105,7 @@ namespace WBL
                         entity.Monto,
                         entity.FechaEntrega,
                         entity.usuarioEntrega,
-                        entity.observaciones,
+                        entity.observaciones
 
                     });
                 return await result;

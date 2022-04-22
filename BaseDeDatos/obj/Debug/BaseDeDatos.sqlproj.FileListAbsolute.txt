@@ -4,3 +4,7 @@ C:\GIT\Examen2\BaseDeDatos\bin\Debug\BaseDeDatos.pdb
 C:\GIT\Examen2\BaseDeDatos\obj\Debug\BaseDeDatos.sqlproj.AssemblyReference.cache
 C:\GIT\Examen2\BaseDeDatos\obj\Debug\BaseDeDatos.dll
 C:\GIT\Examen2\BaseDeDatos\obj\Debug\BaseDeDatos.pdb
+C:\GIT\Examen2\BaseDeDatos\obj\Debug\Model.xml
+C:\GIT\Examen2\BaseDeDatos\obj\Debug\refactor.xml
+C:\GIT\Examen2\BaseDeDatos\obj\Debug\postdeploy.sql
+C:\GIT\Examen2\BaseDeDatos\obj\Debug\predeploy.sql

@@ -3,7 +3,7 @@
     @IdCliente INT,
     @IdServicio INT,
 	@Cantidad INT,
-    @Monto DECIMAL (18,2) ,
+    @Monto DECIMAL ,
     @FechaEntrega DATETIME,
     @UsuarioEntrega VARCHAR (50),
 	@Observaciones VARCHAR (250)
@@ -16,7 +16,6 @@ SET NOCOUNT ON
 	  
 	  BEGIN TRY
 	    UPDATE  Solicitud SET		
-		 IdSolicitud=@IdSolicitud,
          IdCliente=@IdCliente,
          IdServicio=@IdServicio,
          Cantidad=@Cantidad,

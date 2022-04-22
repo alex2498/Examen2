@@ -10,6 +10,7 @@ using Entity;
 
 namespace WebApp.Pages.Solicitud
 {
+    
     public class GridModel : PageModel
     {
         private readonly ISolicitudService soliService;
@@ -21,6 +22,7 @@ namespace WebApp.Pages.Solicitud
 
         public IEnumerable<SolicitudEntity> GridList { get; set; } = new List<SolicitudEntity>();
 
+        public string Mensaje { get; set; } = "";
         public async Task<IActionResult> OnGet()
         {
             try

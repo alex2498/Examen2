@@ -1,0 +1,36 @@
+﻿** Aspectos destacados
+     Tablas que se volverán a compilar
+       Ninguno
+     Índices clúster que se van a quitar
+       Ninguno
+     Índices clúster que se van a crear
+       Ninguno
+     Posibles incidencias de datos
+       Ninguno
+
+** Acciones del usuario
+     Crear
+       [dbo].[Cliente] (Tabla)
+       [dbo].[Servicio] (Tabla)
+       [dbo].[Solicitud] (Tabla)
+       Restricción DEFAULT: restricción sin nombre en [dbo].[Servicio] (Restricción DEFAULT)
+       [dbo].[DF_Servicio_cantidad] (Restricción DEFAULT)
+       [dbo].[FK_Solicitud_Cliente] (Clave externa)
+       [dbo].[FK_Solicitud_Servicio] (Clave externa)
+       [dbo].[ClienteActualizar] (Procedimiento)
+       [dbo].[ClienteEliminar] (Procedimiento)
+       [dbo].[ClienteInsertar] (Procedimiento)
+       [dbo].[ClienteLista] (Procedimiento)
+       [dbo].[ClienteObtener] (Procedimiento)
+       [dbo].[ServicioActualizar] (Procedimiento)
+       [dbo].[ServicioEliminar] (Procedimiento)
+       [dbo].[ServicioInsertar] (Procedimiento)
+       [dbo].[ServicioLista] (Procedimiento)
+       [dbo].[ServicioObtener] (Procedimiento)
+       [dbo].[SolicitudActualizar] (Procedimiento)
+       [dbo].[SolicitudEliminar] (Procedimiento)
+       [dbo].[SolicitudInsertar] (Procedimiento)
+       [dbo].[SolicitudLista] (Procedimiento)
+       [dbo].[SolicitudObtener] (Procedimiento)
+
+** Acciones de compatibilidad
