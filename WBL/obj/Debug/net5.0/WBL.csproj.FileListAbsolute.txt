@@ -3,3 +3,20 @@ D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\WBL.AssemblyInfoInputs.cache
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\WBL.AssemblyInfo.cs
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\WBL\obj\Debug\net5.0\WBL.csproj.CoreCompileInputs.cache
+C:\GIT\Examen2\WBL\obj\Debug\net5.0\WBL.csproj.AssemblyReference.cache
+C:\GIT\Examen2\WBL\obj\Debug\net5.0\WBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\Examen2\WBL\obj\Debug\net5.0\WBL.AssemblyInfoInputs.cache
+C:\GIT\Examen2\WBL\obj\Debug\net5.0\WBL.AssemblyInfo.cs
+C:\GIT\Examen2\WBL\obj\Debug\net5.0\WBL.csproj.CoreCompileInputs.cache
+C:\GIT\Examen2\WBL\bin\Debug\net5.0\WBL.deps.json
+C:\GIT\Examen2\WBL\bin\Debug\net5.0\WBL.dll
+C:\GIT\Examen2\WBL\bin\Debug\net5.0\ref\WBL.dll
+C:\GIT\Examen2\WBL\bin\Debug\net5.0\WBL.pdb
+C:\GIT\Examen2\WBL\bin\Debug\net5.0\BD.dll
+C:\GIT\Examen2\WBL\bin\Debug\net5.0\Entity.dll
+C:\GIT\Examen2\WBL\bin\Debug\net5.0\BD.pdb
+C:\GIT\Examen2\WBL\bin\Debug\net5.0\Entity.pdb
+C:\GIT\Examen2\WBL\obj\Debug\net5.0\WBL.csproj.CopyComplete
+C:\GIT\Examen2\WBL\obj\Debug\net5.0\WBL.dll
+C:\GIT\Examen2\WBL\obj\Debug\net5.0\ref\WBL.dll
+C:\GIT\Examen2\WBL\obj\Debug\net5.0\WBL.pdb

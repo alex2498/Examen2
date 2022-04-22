@@ -3,3 +3,18 @@ D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\obj\Debug\net5.0\BD.AssemblyInfoInputs.cache
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\obj\Debug\net5.0\BD.AssemblyInfo.cs
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\BD\obj\Debug\net5.0\BD.csproj.CoreCompileInputs.cache
+C:\GIT\Examen2\BD\bin\Debug\net5.0\BD.deps.json
+C:\GIT\Examen2\BD\bin\Debug\net5.0\BD.dll
+C:\GIT\Examen2\BD\bin\Debug\net5.0\ref\BD.dll
+C:\GIT\Examen2\BD\bin\Debug\net5.0\BD.pdb
+C:\GIT\Examen2\BD\bin\Debug\net5.0\Entity.dll
+C:\GIT\Examen2\BD\bin\Debug\net5.0\Entity.pdb
+C:\GIT\Examen2\BD\obj\Debug\net5.0\BD.csproj.AssemblyReference.cache
+C:\GIT\Examen2\BD\obj\Debug\net5.0\BD.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\Examen2\BD\obj\Debug\net5.0\BD.AssemblyInfoInputs.cache
+C:\GIT\Examen2\BD\obj\Debug\net5.0\BD.AssemblyInfo.cs
+C:\GIT\Examen2\BD\obj\Debug\net5.0\BD.csproj.CoreCompileInputs.cache
+C:\GIT\Examen2\BD\obj\Debug\net5.0\BD.csproj.CopyComplete
+C:\GIT\Examen2\BD\obj\Debug\net5.0\BD.dll
+C:\GIT\Examen2\BD\obj\Debug\net5.0\ref\BD.dll
+C:\GIT\Examen2\BD\obj\Debug\net5.0\BD.pdb

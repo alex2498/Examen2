@@ -3,3 +3,15 @@ D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\Ent
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\Entity\obj\Debug\net5.0\Entity.AssemblyInfoInputs.cache
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\Entity\obj\Debug\net5.0\Entity.AssemblyInfo.cs
 D:\Universidad\septimo cuatrimestre\progra\Examenes y tareas\Examen2\Examen2\Entity\obj\Debug\net5.0\Entity.csproj.CoreCompileInputs.cache
+C:\GIT\Examen2\Entity\bin\Debug\net5.0\Entity.deps.json
+C:\GIT\Examen2\Entity\bin\Debug\net5.0\Entity.dll
+C:\GIT\Examen2\Entity\bin\Debug\net5.0\ref\Entity.dll
+C:\GIT\Examen2\Entity\bin\Debug\net5.0\Entity.pdb
+C:\GIT\Examen2\Entity\obj\Debug\net5.0\Entity.csproj.AssemblyReference.cache
+C:\GIT\Examen2\Entity\obj\Debug\net5.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\Examen2\Entity\obj\Debug\net5.0\Entity.AssemblyInfoInputs.cache
+C:\GIT\Examen2\Entity\obj\Debug\net5.0\Entity.AssemblyInfo.cs
+C:\GIT\Examen2\Entity\obj\Debug\net5.0\Entity.csproj.CoreCompileInputs.cache
+C:\GIT\Examen2\Entity\obj\Debug\net5.0\Entity.dll
+C:\GIT\Examen2\Entity\obj\Debug\net5.0\ref\Entity.dll
+C:\GIT\Examen2\Entity\obj\Debug\net5.0\Entity.pdb
